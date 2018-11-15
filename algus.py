@@ -12,10 +12,8 @@ while True:
         kasutaja_keel = input("Sisesta, mis keelest soovid tõlkida (eesti, morse): ")
         kasutaja_sisend = input("Sisesta sõna, mida soovid tõlkida: ")
 
-        if kasutaja_sisend == "":
-            break
         vastus = ""
-
+        
         if kasutaja_keel == "eesti":
             for i in kasutaja_sisend:
                 if i == " ":
