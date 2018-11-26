@@ -1,5 +1,7 @@
-from winsound import Beep #https://docs.python.org/3.7/library/winsound.html
+from winsound import Beep 
 from time import sleep
+from tkinter import *
+from tkinter import ttk
 
 #iga morse tähemärgi vahel 1 tühik, iga morse sõna vahel 3 tühikut
 
@@ -19,7 +21,7 @@ while True: #kogu programm jookseb tsüklis
             for i in kasutaja_sisend:
                 if i == " ": #sõnadevaheline tühik on võrdne kolme tühikuga morse koodis
                     vastus += "   "
-                else: #võtame sõnastikust väärtusi iga tähe kohta, tähtede vahel on tühuk
+                else: #võtame sõnastikust väärtusi iga tähe kohta, tähtede vahel on tühik
                     taht = sonastik[i.upper()]
                     vastus += taht + " "
             print(vastus)
